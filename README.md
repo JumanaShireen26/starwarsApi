@@ -17,6 +17,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 To Run This App
 1. Download .zip/clone git repo of master branch
-2. In cmd inside folder path -- npm install -g @angular/cli
 3. npm install
 4. ng serve
