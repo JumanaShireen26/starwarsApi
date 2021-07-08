@@ -4,11 +4,9 @@
     <button mat-icon-button color="white" aria-label="previous Button">
       <mat-icon  (click)="previouspage()">skip_previous</mat-icon>
     </button>
-
     <button mat-icon-button color="white" aria-label="next Button">
       <mat-icon (click)="nextpage()">skip_next</mat-icon>
     </button>
-
   </div>
 
    <mat-list>
@@ -18,10 +16,6 @@
         <a [routerLink] =" ['/people/person']" [queryParams]="{url :person.url}">{{ person.name }}</a>
       </mat-list-item>
   </mat-list>
-
-
-
-
 </mat-card>
 
 

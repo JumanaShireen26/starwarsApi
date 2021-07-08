@@ -18,6 +18,5 @@ import { PeopleRoutingModule } from "./people-routing.module";
     PeopleRoutingModule,
     HttpClientModule
   ]
-
 })
 export class PeopleModule {}

@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './movie-details.component.html',
   styleUrls: ['./movie-details.component.scss']
 })
+
 export class MovieDetailsComponent implements OnInit {
 
   public loadedMovie$: Observable<any> = null;
@@ -19,7 +20,5 @@ export class MovieDetailsComponent implements OnInit {
        url =  params['url'];
     });
     this.loadedMovie$ =this.ApiService.getFilm(url);
-
   }
-
 }

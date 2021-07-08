@@ -21,10 +21,7 @@ export class PeopleListComponent implements OnInit  {
   constructor(private ApiService: ApiService){}
 
   ngOnInit(){
-
-  this.loadedPeoples$ = this.ApiService.getPeople(this.page);
-
-
+       this.loadedPeoples$ = this.ApiService.getPeople(this.page);
   }
   nextpage(){
     if(this.page <9 ){
@@ -39,5 +36,4 @@ export class PeopleListComponent implements OnInit  {
     this.loadedPeoples$ = this.ApiService.getPeople(this.page);
     }
   }
-
 }

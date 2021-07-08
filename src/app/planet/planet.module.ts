@@ -16,6 +16,5 @@ import { PlanetRoutingModule } from "./planet-routing.module";
     RouterModule,
     PlanetRoutingModule
   ]
-
 })
 export class PlanetModule {}
