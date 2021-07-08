@@ -1,0 +1,13 @@
+<mat-card>
+  <div  *ngIf="loadedPlanet$ | async as loadedPlanet">
+  <mat-card-title > {{ loadedPlanet.name }}</mat-card-title><br>
+  <mat-card-content>Terrain</mat-card-content>
+  <mat-card-content>{{ loadedPlanet.terrain }}</mat-card-content>
+  <mat-divider></mat-divider>
+  <mat-card-content>Population</mat-card-content>
+  <mat-card-content>{{ loadedPlanet.population }}</mat-card-content>
+  <mat-divider></mat-divider>
+
+
+
+</div></mat-card>

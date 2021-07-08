@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button color="white" aria-label="Home Button">
+    <mat-icon  [routerLink]="['/']">menu</mat-icon>
+  </button>
+
+  <div class= "heading" *ngIf="routeData$ | async as routeData">
+    {{ routeData.title | titlecase }}
+  </div>
+
+</mat-toolbar>

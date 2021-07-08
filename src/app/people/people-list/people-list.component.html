@@ -1,0 +1,26 @@
+
+<mat-card>
+   <mat-list>
+      <mat-list-item *ngFor="let person of (loadedPeoples$ | async) index as i"  >
+        <img src = "../../../assets/images/person -icon.jfif" [routerLink] =" ['/people/person']" [queryParams]="{url : person.url}">
+        <!-- <a (click)="getPerson(person.name)"> {{ person.name }}</a> -->
+        <a [routerLink] =" ['/people/person']" [queryParams]="{url :person.url}">{{ person.name }}</a>
+      </mat-list-item>
+  </mat-list>
+
+
+  <div >
+    <button mat-icon-button color="white" aria-label="previous Button">
+      <mat-icon  (click)="previouspage()">skip_previous</mat-icon>
+    </button>
+
+    <button mat-icon-button color="white" aria-label="next Button">
+      <mat-icon (click)="nextpage()">skip_next</mat-icon>
+    </button>
+
+  </div>
+
+</mat-card>
+
+
+

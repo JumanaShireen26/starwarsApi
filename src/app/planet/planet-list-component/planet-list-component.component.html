@@ -1,0 +1,22 @@
+
+<mat-card>
+  <div >
+    <button mat-icon-button color="white" aria-label="previous Button">
+      <mat-icon  (click)="previouspage()">skip_previous</mat-icon>
+    </button>
+
+    <button mat-icon-button color="white" aria-label="next Button">
+      <mat-icon (click)="nextpage()">skip_next</mat-icon>
+    </button>
+
+  </div>
+
+  <mat-list>
+     <mat-list-item *ngFor="let planet of (loadedPlanets$ | async) index as i"  >
+       <img src = "../../../assets/images/planet-icon.jfif" [routerLink] =" ['/planets/planet']" [queryParams]="{url : planet.url}">
+       <a [routerLink] =" ['/planets/planet']" [queryParams]="{url : planet.url}" >{{ planet.name }}</a>
+     </mat-list-item>
+ </mat-list>
+
+
+</mat-card>

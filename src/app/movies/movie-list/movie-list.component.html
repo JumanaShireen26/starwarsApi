@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-list>
+     <mat-list-item *ngFor="let movie of (loadedMovies$ | async)"  >
+       <img src = "../../../assets/images/movie-icon.png"  [routerLink] =" ['/films/film']" [queryParams]="{url : movie.url}">
+       <a [routerLink] =" ['/films/film']" [queryParams]="{url : movie.url}">{{ movie.title }}</a>
+     </mat-list-item>
+ </mat-list>
+</mat-card>
